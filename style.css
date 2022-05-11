@@ -1,0 +1,49 @@
+*{
+    font-family: 'Gowun Dodum', sans-serif;
+}
+
+a{
+    color:black;
+    text-decoration:none;
+}
+h1{
+    text-align:center;
+    border-bottom:2px solid gray;
+    margin:0;
+    padding: 20px;
+
+}
+ul{
+    margin:0;
+    padding:20px;
+    background-color:antiquewhite;
+
+}
+#grid{
+    height:700px;
+    display:grid;
+    grid-template-columns: 200px 1fr;
+    grid-template-rows:auto;
+}
+
+#grid #active{
+    padding-left:20px;
+}
+
+#input-sli{
+    display:none;
+}
+
+@media(max-width:800px){
+    #grid{
+        display: block;
+    }
+    ul{
+        border-right:none;
+    }
+    h1{
+        border-bottom: none;
+    }
+}
+
+ 
