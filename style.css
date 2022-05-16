@@ -34,6 +34,8 @@ ul{
     padding: 0;
     font-family: sans-serif;
     box-sizing: border-box;
+    height:300px;
+
 }
 
 #input-sli{
@@ -45,7 +47,9 @@ ul{
 
 .calendar {
     width: 600px;
+    height: 300px;
     margin: 50px;
+    
   }
 
   .header {
@@ -99,7 +103,7 @@ ul{
   }
   
   .date {
-    width: calc(100% / 11);
+    width: calc(100% / 7);
     padding: 15px;
     text-align: right;
     border-bottom: 1px solid #333333;
