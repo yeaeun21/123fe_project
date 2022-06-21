@@ -4,16 +4,43 @@ import React, {useState} from 'react';
 import Calendar from 'react-calendar';
 // import 'react-calendar/dist/Calendar.css'
 import moment, { Moment as MomentTypes } from 'moment';
+import axios from 'axios';
 
-function Tap(){
-  return(
-    <div>
-      <button class="b" id="b1"></button>
-      <button class="b" id="b2"></button>
-      <button class="b" id="b3"></button>
-    </div>
-  )
+axios.post('http://172.16.227.23.:3001/auth/signup',{
+  "user":{
+    "id":"test222",
+    "pw":"2222",
+    "name":"녜우니양",
+    "boardList":[],
+    "scheduleList":[]
+  }
 }
+)
+
+// function Tap(){
+//   const menuList = {
+//     0: <Tabl/>,
+//     1: <Tab2/>,
+//     2: <Tab3/>
+//   };
+//   return(
+//     <div class="menuBar">
+//       <ul class="tabs">
+//         <li class="b" id="b1"></li>
+//         <li class="b" id="b2"></li>
+//         <li class="b" id="b3"></li>
+//       </ul>
+//     </div>
+//   )
+// }
+
+// function Ttap(){
+//   const [openTab,setOpenTab]=useState(1);
+
+//   return(
+//     <div className=
+//   )
+// }
 
 function App() {
 
@@ -30,7 +57,7 @@ function App() {
   return (
     
     <div>
-      <Tap></Tap>
+      {/* <Tap></Tap> */}
       <Calendar 
         onChange={onChange} 
         value={value} 
@@ -66,8 +93,9 @@ function App() {
       />
       <hr></hr>
       <div>
-           {moment(value).format("YYYY.MM.DD")} 
-         </div>
+        {moment(value).format("MM.DD")} 
+        여기에 쓰면됨요
+      </div>
          
     </div>
     
